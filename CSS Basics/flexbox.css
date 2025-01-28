@@ -1,0 +1,13 @@
+.container{
+    border: 1px solid green;
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.box{
+    border: 1px solid crimson;
+ 
+    /* flex-flow: row-reverse; */
+    background-color: cornflowerblue;
+}
