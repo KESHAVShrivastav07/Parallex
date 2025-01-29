@@ -1,71 +1,83 @@
-*{
-    margin: 0%;
-    padding: 0%;
+
+  *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-#wrapper{
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 14px;
+#wrapper{ 
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        perspective: 10px;
 }
+
 .container{
-    display: flex;
     position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
-    transform-style: preserve-3d;
     height: 100%;
-    z-index: -1;
+    transform-style: preserve-3d;
+
 }
 .background{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    object-fit: cover;
-    transform: translateZ(-40px);
-    scale: 4;
+    transform: translateZ(-40px) scale(5 ) ;
 }
 .foreground{
-    position: absolute;
-    height: 100%;
+    transform: translateZ(-20px) scale(3);
+}
+
+.background, .foreground{
+    position:absolute;
+    height:100%;
     width: 100%;
     z-index: -1;
-    object-fit: cover;
-    transform: translateZ(-20px);
-    scale: 2.5;
 }
 h1{
-    position: absolute;
+    position:absolute;
     top: 5rem;
     font-size: 10rem;
-    color: rgba(0, 0, 0, 0.653);
-    text-shadow: 0,0,10px rgba(0,0,0,0.3);
-    left: 50%;
-    transform: translateX(-50%);
     letter-spacing: 4px;
-    font-family:Arial, Helvetica, sans-serif
+    color: white;
+    text-shadow: 0 0 10 rgba(0, 0, 0 , 3);
+
 }
 section{
-    background-color: rgb(45,45,45);
-    color: white;
-    padding: 5rem 0;
+    position: relative;
+background-color: rgb(45,45,45);
+    color:white;
+    padding:5rem 0;
 }
-
-.secHead{
-    font-size: 5rem;
+.sechead{
+    position: absolute;
+    font-size:5rem;
+    padding: 10 8rem;
+    margin: -0px;
+}
+.text{
+    font-size:1.5rem;
     padding: 0 10rem;
+    margin: 5rem 0;
 }
-
 .bg{
     position:relative;
-    width: 100%;
+    width:100%;
     background-attachment: fixed;
-    background-size:cover;
     background-position: center;
-    height: 500px;
+    background-size: cover;
+    height:500px;
+}
+.data{
+    position: absolute;
+    background-color: white;   
+    padding: 0.5rem 2.5rem;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateX(-50%);
+    color:black;
+    font-size:3.5rem;
+    font-weight:600;
 }
 
 .bg1{
@@ -79,22 +91,3 @@ section{
 .bg3{
     background-image: url(surffing.jpg);
 }
-
-.text{
-    font-size: 1.5rem;
-    padding: 0 10rem;
-    margin: 5rem;   
-}
-
-.data{
-    position: absolute;
-    background-color: white;
-    padding: 0.5rem 3rem;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateX(-50%);
-    color: black ;
-    font-weight: 600;
-    text-align: center;  
-}
-

@@ -1,13 +1,16 @@
-.container{
-    border: 1px solid green;
-    height: 400px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+/* .container{
+    border: 1px solid red;
+    height: 700px;
+   background-color: yellow;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(2,1fr);
 }
 .box{
     border: 1px solid crimson;
  
     /* flex-flow: row-reverse; */
     background-color: cornflowerblue;
-}
+    height: 100px;
+    width: 100px;
+} */
